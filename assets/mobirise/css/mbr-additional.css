@@ -2710,6 +2710,7 @@ a {
 .cid-vgDb8jRvZn .navbar-dropdown {
   padding: 0;
   background-color: #ffffff !important;
+  position: fixed;
 }
 .cid-vgDb8jRvZn .opacityScroll {
   background: rgba(255, 255, 255, 0) !important;
