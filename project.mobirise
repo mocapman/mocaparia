@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Mocaparia",
-    "currentPage": "index.html",
+    "currentPage": "noise.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -4065,9 +4065,9 @@
         }
       ]
     },
-    "artifacts.html": {
+    "noise.html": {
       "settings": {
-        "title": "Artifacts",
+        "title": "Noise",
         "order": "1",
         "meta_descr": "A few preserved objects from the capture session. Recipes, memories, itineraries, side trails, and other things that do not belong anywhere else, except that they clearly belong here."
       },
