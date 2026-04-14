@@ -3052,6 +3052,53 @@ a {
     text-align: center;
   }
 }
+.cid-vgNpYFOXLn {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #000000;
+}
+.cid-vgNpYFOXLn .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vgNpYFOXLn .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vgNpYFOXLn .item-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-vgNpYFOXLn .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-vgNpYFOXLn .content-head {
+  max-width: 800px;
+}
+.cid-vgNpYFOXLn .img-wrapper {
+  padding-right: 1.5rem;
+}
+.cid-vgNpYFOXLn .img-wrapper img {
+  width: 6rem;
+}
+.cid-vgNpYFOXLn .mbr-section-title {
+  color: #393193;
+}
+.cid-vgNpYFOXLn .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-vgNpYFOXLn .card-text {
+  color: #ffffff;
+}
+.cid-vgNpYFOXLn .card-title {
+  color: #ffffff;
+}
 .cid-vgDb8jRvZn {
   z-index: 1000;
   width: 100%;
@@ -3622,74 +3669,6 @@ a {
   .cid-vgDb8jRvZn .navbar-collapse {
     padding: 1rem;
   }
-}
-.cid-tJGEoKGifq {
-  padding-top: 4rem;
-  padding-bottom: 0rem;
-  background-color: #000000;
-}
-.cid-tJGEoKGifq img,
-.cid-tJGEoKGifq .item-img {
-  width: 100%;
-  height: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-.cid-tJGEoKGifq .item:focus,
-.cid-tJGEoKGifq span:focus {
-  outline: none;
-}
-.cid-tJGEoKGifq .item {
-  margin-bottom: 2rem;
-}
-@media (max-width: 767px) {
-  .cid-tJGEoKGifq .item {
-    margin-bottom: 1rem;
-  }
-}
-.cid-tJGEoKGifq .item-content {
-  margin-top: 2rem;
-  padding: 0 2.25rem 2.25rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-@media (max-width: 767px) {
-  .cid-tJGEoKGifq .item-content {
-    padding: 0 2rem 1.5rem;
-    margin-top: 1rem;
-  }
-}
-.cid-tJGEoKGifq .item-wrapper {
-  position: relative;
-  border-radius: 2rem;
-  background: #f7f7f7;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.cid-tJGEoKGifq .item-wrapper .item-footer {
-  margin-top: auto;
-}
-.cid-tJGEoKGifq .mbr-section-title {
-  color: #393193;
-  text-align: center;
-}
-.cid-tJGEoKGifq .item-title {
-  text-align: left;
-  color: #ff4552;
-}
-.cid-tJGEoKGifq .item-subtitle {
-  text-align: center;
-}
-.cid-tJGEoKGifq .mbr-text,
-.cid-tJGEoKGifq .item .mbr-section-btn {
-  text-align: left;
-}
-.cid-tJGEoKGifq .mbr-section-subtitle,
-.cid-tJGEoKGifq .mbr-section-head .mbr-section-btn {
-  text-align: justify;
-  color: #ffffff;
 }
 .cid-vgDp8lnCs9 {
   padding-top: 1rem;
