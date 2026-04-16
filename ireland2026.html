@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dave &amp; Lilli's Trip to Ireland 2026 · Google Sites Version</title>
+  <style>
+    :root{
+      --bg:#f3f3f4;
+      --paper:#ffffff;
+      --ink:#22162d;
+      --muted:#6c6a75;
+      --line:#e6e4ea;
+      --pill:#eceaf1;
+      --accent:#2a1834;
+      --accent-soft:#f1eef5;
+      --shadow:0 10px 30px rgba(32,18,46,.08);
+      --radius:28px;
+      --content-w:1180px;
+      --timeline-w:250px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .shell{
+      max-width:calc(var(--content-w) + 80px);
+      margin:0 auto;
+      padding:28px 20px 80px;
+    }
+    .layout{
+      display:grid;
+      grid-template-columns: var(--timeline-w) minmax(0,1fr);
+      gap:28px;
+      align-items:start;
+    }
+    .timeline{
+      position:sticky;
+      top:18px;
+      background:rgba(255,255,255,.84);
+      backdrop-filter: blur(12px);
+      border:1px solid var(--line);
+      border-radius:32px;
+      box-shadow:var(--shadow);
+      padding:22px 18px;
+    }
+    .timeline h3{
+      margin:0 0 14px;
+      font-size:15px;
+      letter-spacing:.02em;
+    }
+    .timeline .hint{
+      color:var(--muted);
+      font-size:12px;
+      margin-bottom:18px;
+    }
+    .timeline ol{
+      list-style:none;
+      padding:0;
+      margin:0;
+      position:relative;
+    }
+    .timeline ol:before{
+      content:"";
+      position:absolute;
+      left:12px;
+      top:8px;
+      bottom:8px;
+      width:2px;
+      background:#d9d4df;
+    }
+    .timeline li{
+      position:relative;
+      padding-left:34px;
+      margin:0 0 14px;
+    }
+    .timeline li:last-child{margin-bottom:0}
+    .timeline li:before{
+      content:"";
+      position:absolute;
+      left:6px;
+      top:6px;
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:var(--paper);
+      border:3px solid var(--accent);
+      z-index:1;
+    }
+    .timeline a{
+      text-decoration:none;
+      display:block;
+      padding:6px 8px;
+      border-radius:12px;
+    }
+    .timeline a:hover{background:var(--accent-soft)}
+    .timeline .label{
+      font-size:14px;
+      font-weight:700;
+    }
+    .timeline .sub{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:1px;
+    }
+
+    .doc{
+      min-width:0;
+    }
+    .section{
+      scroll-margin-top:18px;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:36px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      margin-bottom:26px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.02fr .98fr;
+      min-height:560px;
+    }
+    .hero-copy{
+      padding:42px 38px 30px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .kicker{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:16px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:7px 11px;
+      font-size:12px;
+      border-radius:999px;
+      background:var(--pill);
+      color:#534c60;
+      font-weight:600;
+    }
+    h1{
+      margin:0;
+      font-size:46px;
+      line-height:1.04;
+      letter-spacing:-.035em;
+    }
+    .subhead{
+      color:#4e4a58;
+      margin-top:14px;
+      font-size:17px;
+      max-width:44ch;
+    }
+    .stats{
+      display:flex;
+      gap:26px;
+      flex-wrap:wrap;
+      margin-top:22px;
+    }
+    .stat b{
+      display:block;
+      font-size:42px;
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+    .stat span{
+      color:var(--muted);
+      font-size:12px;
+    }
+    .layla-sign{
+      margin-top:36px;
+      padding-top:22px;
+      border-top:1px solid var(--line);
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:20px;
+    }
+    .brand{
+      font-size:18px;
+      font-weight:800;
+    }
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:500;
+      margin-top:6px;
+    }
+    .hero-photo{
+      min-height:100%;
+      background:#dfe5e1 center/cover no-repeat;
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+      padding:26px;
+    }
+    .hero-photo img{
+      display:block;
+      width:min(92%, 560px);
+      height:auto;
+      object-fit:contain;
+      border-radius:22px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+
+    .section-head{
+      display:grid;
+      grid-template-columns: 220px minmax(0,1fr);
+      gap:22px;
+      padding:30px 28px 12px;
+      align-items:start;
+    }
+    .left-rail .days{
+      font-size:31px;
+      font-weight:800;
+      line-height:1;
+      letter-spacing:-.03em;
+      margin-bottom:8px;
+    }
+    .left-rail .nights,
+    .left-rail .dates{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:4px;
+    }
+    .main-title{
+      font-size:40px;
+      line-height:1.03;
+      letter-spacing:-.03em;
+      margin:0 0 10px;
+    }
+    .main-copy{
+      color:#595663;
+      font-size:15px;
+      max-width:70ch;
+      margin:0;
+    }
+    .banner{
+      margin:10px 28px 18px;
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:#e5e2ea;
+    }
+    .banner img{
+      display:block;
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .anchor-row{
+      padding:0 28px 10px;
+      display:flex;
+      justify-content:flex-end;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .anchor-btn{
+      text-decoration:none;
+      font-size:12px;
+      font-weight:700;
+      color:#4f4860;
+      background:var(--accent-soft);
+      border:1px solid #e4deec;
+      padding:8px 12px;
+      border-radius:999px;
+    }
+    .anchor-btn:hover{background:#e9e3f1}
+
+    .content{
+      padding:0 28px 30px;
+    }
+    .card{
+      display:grid;
+      grid-template-columns: 180px minmax(0,1fr);
+      gap:18px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:16px;
+      margin-bottom:16px;
+      background:#fff;
+    }
+    .card .meta{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:25px;
+      line-height:1.1;
+      letter-spacing:-.02em;
+    }
+    .card p{
+      margin:0;
+      color:#5b5764;
+      font-size:14px;
+    }
+    .card ul{
+      margin:10px 0 0 0;
+      padding-left:18px;
+      color:#393545;
+      font-size:14px;
+    }
+    .card li{margin:4px 0}
+    .thumb{
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:#e9e7ee;
+      min-height:140px;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .travel-strip{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:16px 18px;
+      margin:10px 0 0;
+      background:#fcfcfd;
+    }
+    .travel-strip .icon{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-size:22px;
+      background:var(--accent-soft);
+    }
+    .travel-strip b{
+      display:block;
+      font-size:18px;
+    }
+    .travel-strip span{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .leg-table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      margin-top:10px;
+    }
+    .leg-table tr td{
+      border-style:inset;
+      border-width:1px;
+      border-color:#d7d2de;
+      padding:10px 12px;
+      vertical-align:top;
+      background:#fff;
+    }
+    .leg-table tr td:first-child{
+      width:210px;
+      font-weight:700;
+      color:#393545;
+      background:#f7f4fa;
+    }
+    .leg-table tr + tr td{
+      border-top-style:inset;
+    }
+    .label-icon{
+      display:inline-block;
+      min-width:1.5em;
+      margin-right:6px;
+    }
+
+
+    .resource-links{
+      padding:28px;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:18px;
+      align-items:stretch;
+    }
+    .resource-link{
+      display:block;
+      text-decoration:none;
+      color:var(--ink);
+      background:#fcfbfe;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:18px 20px;
+      box-shadow:var(--shadow);
+    }
+    .resource-link:hover{
+      background:var(--accent-soft);
+    }
+    .resource-link .title{
+      display:block;
+      font-size:20px;
+      font-weight:800;
+      letter-spacing:-.02em;
+      margin-bottom:6px;
+    }
+    .resource-link .desc{
+      display:block;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.45;
+    }
+
+    .map-wrap{
+      padding:28px;
+      display:grid;
+      grid-template-columns: 1.04fr .96fr;
+      gap:26px;
+      align-items:start;
+    }
+    .route-image{
+      border-radius:28px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:#e8eef0;
+    }
+    .route-image img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .route-list{
+      padding:10px 4px 0;
+    }
+    .route-list h2{
+      font-size:40px;
+      line-height:1.03;
+      letter-spacing:-.03em;
+      margin:0 0 18px;
+    }
+    .route-list ol{
+      margin:0;
+      padding-left:28px;
+    }
+    .route-list li{
+      margin:0 0 16px;
+      font-size:15px;
+      line-height:1.45;
+    }
+    .route-list a{
+      font-weight:800;
+      color:var(--ink);
+      text-decoration:underline;
+      text-underline-offset:2px;
+    }
+    .route-note{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+      max-width:40ch;
+    }
+
+    .footer{
+      padding:18px 28px 26px;
+      color:var(--muted);
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      border-top:1px solid var(--line);
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:1080px){
+      .layout{grid-template-columns:1fr}
+      .timeline{
+        position:relative;
+        top:auto;
+      }
+    }
+    @media (max-width:860px){
+      .hero,
+      .map-wrap,
+      .section-head,
+      .card,
+      .resource-links{
+        grid-template-columns:1fr;
+      }
+      .hero{min-height:auto}
+      .hero-copy{padding:28px 24px 24px}
+      h1{font-size:36px}
+      .main-title,.route-list h2{font-size:31px}
+      .section-head,.content,.map-wrap{padding-left:20px;padding-right:20px}
+      .banner{margin-left:20px;margin-right:20px}
+      .anchor-row{padding-left:20px;padding-right:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="layout">
+      <aside class="timeline">
+        <h3>Trip timeline</h3>
+        <div class="hint">Top to bottom, with jump links in both directions.</div>
+        <ol>
+          <li>📌 <a href="#cover"><div class="label">Overview</div><div class="sub">May 3 - May 23</div></a></li>
+          <li>📍 <a href="#route-map"><div class="label">Route map</div><div class="sub">Full trip route</div></a></li>
+          <li>📍 <a href="#outbound"><div class="label">Outbound</div><div class="sub">May 3 - May 5</div></a></li>
+          <li>📍 <a href="#dublin1"><div class="label">Dublin</div><div class="sub">May 5 - May 7</div></a></li>
+          <li>📍 <a href="#waterford"><div class="label">Waterford</div><div class="sub">May 7 - May 8</div></a></li>
+          <li>📍 <a href="#cork"><div class="label">Cork</div><div class="sub">May 8 - May 11</div></a></li>
+          <li>📍 <a href="#dingle"><div class="label">Dingle</div><div class="sub">May 11 - May 14</div></a></li>
+          <li>📍 <a href="#galway"><div class="label">Galway</div><div class="sub">May 14 - May 16</div></a></li>
+          <li>📍 <a href="#derry"><div class="label">Derry</div><div class="sub">May 16 - May 18</div></a></li>
+          <li>📍 <a href="#dublin2"><div class="label">Dublin</div><div class="sub">May 18 - May 21</div></a></li>
+          <li>📍 <a href="#return"><div class="label">Return</div><div class="sub">May 21 - May 23</div></a></li>
+        </ol>
+      </aside>
+
+      <main class="doc">
+
+        <section class="section" id="cover">
+          <div class="hero">
+            <div class="hero-copy">
+              <div>
+                <div class="kicker">
+                  <span class="pill">Road Trip</span>
+                  <span class="pill">Hotels</span>
+                  <span class="pill">Flights</span>
+                </div>
+                <h1>Dave &amp; Lilli's Trip to Ireland 2026</h1>
+                <div class="subhead">
+                  Portland to Dublin road trip itinerary with confirmed flights, parking, hotels, drive legs, map links, and a Philadelphia stop on the way home.
+                </div>
+                <div class="stats">
+                  <div class="stat"><b>16</b><span>days</span></div>
+                  <div class="stat"><b>7</b><span>Ireland stays</span></div>
+                  <div class="stat"><b>2</b><span>US travel blocks</span></div>
+                  <div class="stat"><b>9</b><span>timeline stops</span></div>
+                </div>
+                <div class="subhead" style="margin-top:14px;font-size:15px;">
+                  Sun, May 3, 2026 - Sat, May 23, 2026
+                </div>
+              </div>
+              <div class="layla-sign">
+                <div class="brand">Dave and Lilli Ireland Trip 2026
+                  <small>Flight, hotel, and route reference</small>
+                </div>
+                <a class="anchor-btn" href="#route-map">Open route map</a>
+              </div>
+            </div>
+            <div class="hero-photo"><img src="photos/ireland.png" alt="Ireland poster collage" /></div>
+          </div>
+          <div class="footer">
+            <div>Outbound: Portland, Chicago, Philadelphia, Dublin.</div>
+            <div>Ireland route: Dublin, Waterford, Cork, Dingle, Galway, Derry, Dublin, then Philadelphia and Portland return.</div>
+          </div>
+        </section>
+
+
+        <section class="section" id="trip-links">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Trip Links</div>
+              <div class="nights">Supporting pages</div>
+              <div class="dates">Open in new tabs</div>
+            </div>
+            <div>
+              <h2 class="main-title">Helpful side plans and reference pages</h2>
+              <p class="main-copy">Quick links to the companion pages that live beside this itinerary.</p>
+            </div>
+          </div>
+          <div class="resource-links">
+            <a class="resource-link" href="PHL-connection-plan.html" target="_blank" rel="noopener">
+              <span class="title">PHL Connection Plan</span>
+              <span class="desc">Philadelphia layover logistics, timing, and airport-to-city plan.</span>
+            </a>
+            <a class="resource-link" href="cell-service.html" target="_blank" rel="noopener">
+              <span class="title">Cell Service</span>
+              <span class="desc">Connectivity strategy, airplane mode plan, and offline prep.</span>
+            </a>
+            <a class="resource-link" href="ireland-coffee.html" target="_blank" rel="noopener">
+              <span class="title">Coffee</span>
+              <span class="desc">Coffee stops matched to your hotel sequence across the trip.</span>
+            </a>
+            <a class="resource-link" href="Ireland-restaurants.html" target="_blank" rel="noopener">
+              <span class="title">Restaurant</span>
+              <span class="desc">Restaurant picks matched to each major stop on the route.</span>
+            </a>
+            <a class="resource-link" href="ireland-special-stops.html" target="_blank" rel="noopener">
+              <span class="title">Special Stops</span>
+              <span class="desc">Hidden gems, music pubs, scenic route calls, and worth-it diversions.</span>
+            </a>
+          </div>
+          <div class="footer">
+            <div>Open any side page in a new tab.</div>
+            <div><a class="anchor-btn" href="#route-map">Continue to route map</a></div>
+          </div>
+        </section>
+
+        <section class="section" id="route-map">
+          <div class="map-wrap">
+            <div class="route-image">
+              <img src="photos/route.png" alt="Ireland route map" />
+            </div>
+            <div class="route-list">
+              <h2>Travel Plan</h2>
+              <ol>
+                <li>🅿️ <a href="#outbound">Outbound Travel</a> · May 3 - May 5 · Portland, parking, flight chain, long layover in Philadelphia.</li>
+                <li>📍 <a href="#dublin1">Dublin, Ireland</a> · May 5 - May 7 · First stay.</li>
+                <li>📍 <a href="#waterford">Waterford, Ireland</a> · May 7 - May 8 · One night.</li>
+                <li>📍 <a href="#cork">Cork, Ireland</a> · May 8 - May 11 · Three nights.</li>
+                <li>📍 <a href="#dingle">Dingle, Ireland</a> · May 11 - May 14 · Three nights.</li>
+                <li>📍 <a href="#galway">Galway, Ireland</a> · May 14 - May 16 · Two nights.</li>
+                <li>📍 <a href="#derry">Derry, Northern Ireland</a> · May 16 - May 18 · Two nights.</li>
+                <li>📍 <a href="#dublin2">Dublin, Ireland</a> · May 18 - May 21 · Final stay.</li>
+                <li>🏨 <a href="#return">Return Travel</a> · May 21 - May 23 · Dublin, Philadelphia hotel, onward flights home.</li>
+              </ol>
+              <div class="route-note">
+                Route order: Portland departure, Dublin, Waterford, Cork, Dingle, Galway, Derry, final Dublin stay, then Philadelphia and Portland return.
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div>Route map at left, stop sequence at right.</div>
+            <div><a class="anchor-btn" href="#cover">Back to top</a></div>
+          </div>
+        </section>
+
+        <section class="section" id="outbound">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Outbound</div>
+              <div class="nights">US travel block</div>
+              <div class="dates">Sun, May 3 - Tue, May 5</div>
+            </div>
+            <div>
+              <h2 class="main-title">Portland, parking, and the 10-hour Philadelphia layover</h2>
+              <p class="main-copy">Portland gives you an easy launch point for this trip, with PDX close enough to keep departure night simple and a long Philadelphia layover that can double as a first small city stop instead of dead airport time.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/pdx.png" alt="Outbound section photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#route-map">Up to route map</a>
+            <a class="anchor-btn" href="#dublin1">Down to Dublin</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/outbound.png" alt="Outbound photo"></div>
+              <div>
+                <div class="meta">Travel logistics</div>
+                <h3>Outbound sequence</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🅿️</span>Parking</td><td>Candlewood Suites Portland - Uncovered Self Park, 11250 Northeast Holman Street, Portland<br><a href="https://www.google.com/maps/search/?api=1&query=Candlewood+Suites+Portland+11250+Northeast+Holman+Street+Portland" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Parking Time</td><td>Sun, May 3, 9:00 PM PDT</td></tr>
+                  <tr><td><span class="label-icon">✈️</span>Flight 1</td><td>Southwest WN 3708, PDX to MDW<br>Depart: Sun, May 3, 11:55 PM PDT<br>Arrive: Mon, May 4, 5:50 AM CDT</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>MDW Layover</td><td>1 hr 50 min</td></tr>
+                  <tr><td><span class="label-icon">✈️</span>Flight 2</td><td>Southwest WN 3336, MDW to PHL<br>Depart: 7:40 AM CDT<br>Arrive: 10:35 AM EDT, Terminal E</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>PHL Layover</td><td>9 hr 55 min</td></tr>
+                  <tr><td><span class="label-icon">✈️</span>Flight 3</td><td>Aer Lingus EI 114, PHL to DUB<br>Terminal: A East<br>Depart: 8:30 PM EDT<br>Arrive: Tue, May 5, 8:10 AM GMT+1, Terminal 2</td></tr>
+                  <tr><td><span class="label-icon">🚗</span>Car Pickup</td><td>Europcar, Tue, May 5, 12:00 PM GMT+1<br>Terminal 1 and 2, Dublin Airport<br>Phone: 35318122800<br><a href="https://www.google.com/maps/search/?api=1&query=Europcar+Dublin+Airport+Terminal+1+and+2" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Reading+Terminal+Market+Philadelphia" target="_blank">Reading Terminal Market</a><br><a href="https://www.google.com/maps/search/?api=1&query=Liberty+Bell+Philadelphia" target="_blank">Liberty Bell</a><br><a href="https://www.google.com/maps/search/?api=1&query=Independence+Hall+Philadelphia" target="_blank">Independence Hall</a></td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">✈️</div>
+              <div><b>Outbound travel summary</b><span>Portland parking, overnight Southwest flights, long Philadelphia layover, Aer Lingus flight to Dublin, and Europcar pickup at Dublin Airport.</span></div>
+            </div>
+          </div>
+          <div class="footer">
+            <div>Prev: Route map</div>
+            <div>Next: Dublin first stay</div>
+          </div>
+        </section>
+
+        <section class="section" id="dublin1">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 1-3</div>
+              <div class="nights">2 nights</div>
+              <div class="dates">May 5 - May 7</div>
+            </div>
+            <div>
+              <h2 class="main-title">Dublin</h2>
+              <p class="main-copy">Dublin is a strong first stop because it is compact, walkable, and full of historic landmarks, so you can ease into Ireland without needing a long first-day drive after landing.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/dublin.jpg" alt="Dublin first stay photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#outbound">Up to outbound</a>
+            <a class="anchor-btn" href="#waterford">Down to Waterford</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/travelodge.png" alt="Dublin card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>First Dublin stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Travelodge PLUS Dublin City Centre</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>Townsend Street, Dublin<br><a href="https://www.google.com/maps/search/?api=1&query=Travelodge+PLUS+Dublin+City+Centre+Townsend+Street+Dublin" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Tue, May 5, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Thu, May 7, 11:00 AM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Dublin+Castle" target="_blank">Dublin Castle</a> - historic civic core and an easy first stop.<br><a href="https://www.google.com/maps/search/?api=1&query=Grafton+Street+Dublin" target="_blank">Grafton Street</a> - lively pedestrian shopping street in the center.<br><a href="https://www.google.com/maps/search/?api=1&query=Trinity+College+Dublin" target="_blank">Trinity College</a> - iconic campus with classic Dublin atmosphere.<br><a href="https://www.google.com/maps/search/?api=1&query=St+Patricks+Cathedral+Dublin" target="_blank">St. Patrick's Cathedral</a> - one of Dublin's strongest historic landmarks.<br><a href="https://www.google.com/maps/search/?api=1&query=Temple+Bar+Pub+Dublin" target="_blank">Temple Bar</a> - famous pub district, best for a quick pass not an all-night commitment.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive to Waterford, about 1 hr 57 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Outbound</div><div>Next: Waterford</div></div>
+        </section>
+
+        <section class="section" id="waterford">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 3-4</div>
+              <div class="nights">1 night</div>
+              <div class="dates">May 7 - May 8</div>
+            </div>
+            <div>
+              <h2 class="main-title">Waterford</h2>
+              <p class="main-copy">Waterford is Ireland's oldest city and works well as a short transition stop, with a compact center, Viking history, and a lighter pace before the longer Cork stay.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/waterford.png" alt="Waterford photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#dublin1">Up to Dublin</a>
+            <a class="anchor-btn" href="#cork">Down to Cork</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/fitzwilton.png" alt="Waterford card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>One-night stop</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>The Fitzwilton Hotel</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>Bridge Street, Waterford<br><a href="https://www.google.com/maps/search/?api=1&query=The+Fitzwilton+Hotel+Bridge+Street+Waterford" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Thu, May 7, 4:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Fri, May 8, 12:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Viking+Triangle+Waterford" target="_blank">Viking Triangle</a> - compact historic core, easy to cover on foot.<br><a href="https://www.google.com/maps/search/?api=1&query=House+of+Waterford+Crystal" target="_blank">House of Waterford Crystal</a> - the signature stop if you want the classic Waterford experience.<br><a href="https://www.google.com/maps/search/?api=1&query=Waterford+Treasures+Medieval+Museum" target="_blank">Medieval Museum</a> - strong history stop that fits the short stay well.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive to Cork, about 1 hr 35 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Dublin</div><div>Next: Cork</div></div>
+        </section>
+
+        <section class="section" id="cork">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 4-7</div>
+              <div class="nights">3 nights</div>
+              <div class="dates">May 8 - May 11</div>
+            </div>
+            <div>
+              <h2 class="main-title">Cork</h2>
+              <p class="main-copy">Cork gives you a lively city base with strong food options, easy historic stops, and flexible reach into nearby villages and countryside before the route turns more scenic.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/cork.png" alt="Cork photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#waterford">Up to Waterford</a>
+            <a class="anchor-btn" href="#dingle">Down to Dingle</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/metropole.png" alt="Cork card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>Three-night stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>The Metropole Hotel Cork</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>Mac Curtain St, Cork<br><a href="https://www.google.com/maps/search/?api=1&query=The+Metropole+Hotel+Cork+Mac+Curtain+Street+Cork" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Fri, May 8, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Mon, May 11, 12:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=English+Market+Cork" target="_blank">English Market</a> - the best easy food-and-browse stop in the city center.<br><a href="https://www.google.com/maps/search/?api=1&query=Blarney+Castle" target="_blank">Blarney Castle</a> - the big-ticket day trip if you want the classic tourist stop.<br><a href="https://www.google.com/maps/search/?api=1&query=St+Fin+Barres+Cathedral+Cork" target="_blank">St. Fin Barre's Cathedral</a> - dramatic architecture and an easy city landmark.<br><a href="https://www.google.com/maps/search/?api=1&query=Cork+City+Gaol" target="_blank">Cork City Gaol</a> - strong history stop with a more atmospheric feel.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive to Dingle, about 1 hr 57 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Waterford</div><div>Next: Dingle</div></div>
+        </section>
+
+        <section class="section" id="dingle">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 7-10</div>
+              <div class="nights">3 nights</div>
+              <div class="dates">May 11 - May 14</div>
+            </div>
+            <div>
+              <h2 class="main-title">Dingle</h2>
+              <p class="main-copy">Dingle is one of the most scenic stretches of the trip, with a small harbor town feel, dramatic coastal roads, and some of the best landscape views on the full route.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/dingle.png" alt="Dingle photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#cork">Up to Cork</a>
+            <a class="anchor-btn" href="#galway">Down to Galway</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/dingleharbour.png" alt="Dingle card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>Three-night stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Dingle Harbour Nights - Room Only</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>The Wood, Dingle<br><a href="https://www.google.com/maps/search/?api=1&query=Dingle+Harbour+Nights+The+Wood+Dingle" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Mon, May 11, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Thu, May 14, 10:30 AM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Connor+Pass+Dingle" target="_blank">Connor Pass</a> - one of the most dramatic drives on the trip.<br><a href="https://www.google.com/maps/search/?api=1&query=Slea+Head+Dingle" target="_blank">Slea Head</a> - pure coastal scenery and a must-do Dingle route.<br><a href="https://www.google.com/maps/search/?api=1&query=Gallarus+Oratory" target="_blank">Gallarus Oratory</a> - compact historic stop on the peninsula loop.<br><a href="https://www.google.com/maps/search/?api=1&query=Blasket+Islands+boat+tour+Dingle" target="_blank">Blasket Islands tour</a> - the best way to add wildlife and open-water views.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive to Galway, about 3 hr 16 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Cork</div><div>Next: Galway</div></div>
+        </section>
+
+        <section class="section" id="galway">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 10-12</div>
+              <div class="nights">2 nights</div>
+              <div class="dates">May 14 - May 16</div>
+            </div>
+            <div>
+              <h2 class="main-title">Galway</h2>
+              <p class="main-copy">Galway brings a more relaxed west coast energy, with a compact center, strong music and food culture, and easy access to the bay and promenade.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/galway.png" alt="Galway photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#dingle">Up to Dingle</a>
+            <a class="anchor-btn" href="#derry">Down to Derry</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/nox.png" alt="Galway card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>Two-night stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Nox Hotel Galway</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>Headford Rd, Galway<br><a href="https://www.google.com/maps/search/?api=1&query=Nox+Hotel+Galway+Headford+Road+Galway" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Thu, May 14, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Sat, May 16, 12:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Galway+Bay" target="_blank">Galway Bay</a> - broad coastal views and a good reset after driving.<br><a href="https://www.google.com/maps/search/?api=1&query=Salthill+Promenade+Galway" target="_blank">Salthill Promenade</a> - easy walk with sea air and classic Galway energy.<br><a href="https://www.google.com/maps/search/?api=1&query=Spanish+Arch+Galway" target="_blank">Spanish Arch</a> - quick historic stop near the lively core.<br><a href="https://www.google.com/maps/search/?api=1&query=Galway+Cathedral" target="_blank">Galway Cathedral</a> - a worthwhile architectural stop if you're already nearby.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive to Derry, about 3 hr 19 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Dingle</div><div>Next: Derry</div></div>
+        </section>
+
+        <section class="section" id="derry">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 12-14</div>
+              <div class="nights">2 nights</div>
+              <div class="dates">May 16 - May 18</div>
+            </div>
+            <div>
+              <h2 class="main-title">Derry</h2>
+              <p class="main-copy">Derry adds a different layer to the trip, with intact city walls, modern political history, and a useful base for reaching the Causeway Coast.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/derry.png" alt="Derry photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#galway">Up to Galway</a>
+            <a class="anchor-btn" href="#dublin2">Down to Dublin</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/holidayinn.png" alt="Derry card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>Two-night stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Holiday Inn Express - Derry - Londonderry by IHG</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>31 Strand Road, Derry BT48 7BL<br><a href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Derry+31+Strand+Road+Londonderry+BT48+7BL" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Sat, May 16, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Mon, May 18, 11:00 AM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Bogside+Derry" target="_blank">Bogside</a><br><a href="https://www.google.com/maps/search/?api=1&query=Derry+Walls" target="_blank">Derry Walls</a><br><a href="https://www.google.com/maps/search/?api=1&query=Giants+Causeway" target="_blank">Giant\'s Causeway</a><br><a href="https://www.google.com/maps/search/?api=1&query=Dunluce+Castle" target="_blank">Dunluce Castle</a></td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🚗</div>
+              <div><b>Next leg</b><span>Drive back to Dublin, about 2 hr 36 min.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Galway</div><div>Next: Dublin final stay</div></div>
+        </section>
+
+        <section class="section" id="dublin2">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Days 14-17</div>
+              <div class="nights">3 nights</div>
+              <div class="dates">May 18 - May 21</div>
+            </div>
+            <div>
+              <h2 class="main-title">Dublin</h2>
+              <p class="main-copy">The final Dublin stay gives you a clean finish, with time for last city stops, a manageable airport run, and a familiar urban base before the return flight.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/returndublin.jpg" alt="Final Dublin photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#derry">Up to Derry</a>
+            <a class="anchor-btn" href="#return">Down to return travel</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/pembroke.png" alt="Final Dublin card photo"></div>
+              <div>
+                <div class="meta">Stay block</div>
+                <h3>Final Dublin stay</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Pembroke Guest Suite</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>6 Pembroke Road, Ballsbridge, Dublin<br><a href="https://www.google.com/maps/search/?api=1&query=Pembroke+Guest+Suite+6+Pembroke+Road+Ballsbridge+Dublin" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Mon, May 18, 3:00 PM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Thu, May 21, 11:00 AM GMT+1</td></tr>
+                  <tr><td><span class="label-icon">🚗</span>Car Return</td><td>Thu, May 21, 12:00 PM GMT+1<br>Europcar Dublin Airport<br><a href="https://www.google.com/maps/search/?api=1&query=Europcar+Dublin+Airport+Terminal+1+and+2" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Jameson+Distillery+Bow+St+Dublin" target="_blank">Jameson Distillery</a> - a good last full-day stop if you want one polished Dublin experience.<br><a href="https://www.google.com/maps/search/?api=1&query=Temple+Bar+Pub+Dublin" target="_blank">Temple Bar</a> - still worth a walk-through for the atmosphere, even if brief.<br><a href="https://www.google.com/maps/search/?api=1&query=Irish+Museum+of+Modern+Art+Dublin" target="_blank">Irish Museum of Modern Art</a> - a quieter option if you want a break from pub and street energy.</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🛫</div>
+              <div><b>Next leg</b><span>Aer Lingus EI 115 from Dublin to Philadelphia, Thu, May 21 at 4:10 PM GMT+1.</span></div>
+            </div>
+          </div>
+          <div class="footer"><div>Prev: Derry</div><div>Next: Return travel</div></div>
+        </section>
+
+        <section class="section" id="return">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Return</div>
+              <div class="nights">US travel block</div>
+              <div class="dates">Thu, May 21 - Sat, May 23</div>
+            </div>
+            <div>
+              <h2 class="main-title">Philadelphia hotel, return layover, and flights home</h2>
+              <p class="main-copy">Philadelphia works well as a return stop because the center city area is dense with classic sights, good food, and enough activity to make the U.S. layover feel like part of the trip instead of just transit.</p>
+            </div>
+          </div>
+          <div class="banner"><img src="photos/philly.png" alt="Return section photo"></div>
+          <div class="anchor-row">
+            <a class="anchor-btn" href="#dublin2">Up to final Dublin</a>
+            <a class="anchor-btn" href="#cover">Back to top</a>
+          </div>
+          <div class="content">
+            <div class="card">
+              <div class="thumb"><img src="photos/cambria.png" alt="Return card photo"></div>
+              <div>
+                <div class="meta">Return logistics</div>
+                <h3>Return sequence</h3>
+                <table class="leg-table">
+                  <tr><td><span class="label-icon">✈️</span>Flight 1</td><td>Aer Lingus EI 115, DUB to PHL<br>Terminal: 2<br>Depart: Thu, May 21, 4:10 PM GMT+1<br>Arrive: 6:55 PM EDT, Terminal A East</td></tr>
+                  <tr><td><span class="label-icon">🏨</span>Hotel</td><td>Cambria Hotel Philadelphia Downtown - City Center</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Address</td><td>219 South Broad Street, Philadelphia<br><a href="https://www.google.com/maps/search/?api=1&query=Cambria+Hotel+Philadelphia+Downtown+City+Center+219+South+Broad+Street+Philadelphia" target="_blank">Google Maps</a></td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-in</td><td>Thu, May 21, 8:55 PM EDT</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>Check-out</td><td>Sat, May 23, 11:00 AM EDT</td></tr>
+                  <tr><td><span class="label-icon">📍</span>Possible Destinations</td><td><a href="https://www.google.com/maps/search/?api=1&query=Reading+Terminal+Market+Philadelphia" target="_blank">Reading Terminal Market</a> - the easiest high-value food stop in the city center.<br><a href="https://www.google.com/maps/search/?api=1&query=Liberty+Bell+Philadelphia" target="_blank">Liberty Bell</a> - classic and easy if you want the headline sight.<br><a href="https://www.google.com/maps/search/?api=1&query=Independence+Hall+Philadelphia" target="_blank">Independence Hall</a> - pairs naturally with the Liberty Bell area.<br><a href="https://www.google.com/maps/search/?api=1&query=Philadelphia+Museum+of+Art" target="_blank">Philadelphia Museum of Art</a> - best if you want one iconic final-city stop before heading home.</td></tr>
+                  <tr><td><span class="label-icon">✈️</span>Flight 2</td><td>Southwest WN 472, PHL to DEN<br>Terminal: E<br>Depart: Sat, May 23, 5:00 PM EDT<br>Arrive: 7:10 PM MDT</td></tr>
+                  <tr><td><span class="label-icon">🕒</span>DEN Layover</td><td>1 hr 15 min</td></tr>
+                  <tr><td><span class="label-icon">✈️</span>Flight 3</td><td>CT 685, DEN to PDX<br>Depart: 8:25 PM MDT<br>Arrive: 10:05 PM PDT</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="travel-strip">
+              <div class="icon">🏁</div>
+              <div><b>Return travel summary</b><span>Dublin to Philadelphia, overnight downtown hotel stay, central Philadelphia sightseeing options, then flights through Denver back to Portland.</span></div>
+            </div>
+          </div>
+          <div class="footer">
+            <div>Prev: Final Dublin</div>
+            <div><a class="anchor-btn" href="#cover">Back to top</a></div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>
