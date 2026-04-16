@@ -358,6 +358,70 @@
       font-size:14px;
     }
 
+    .leg-table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      margin-top:10px;
+    }
+    .leg-table tr td{
+      border-style:inset;
+      border-width:1px;
+      border-color:#d7d2de;
+      padding:10px 12px;
+      vertical-align:top;
+      background:#fff;
+    }
+    .leg-table tr td:first-child{
+      width:210px;
+      font-weight:700;
+      color:#393545;
+      background:#f7f4fa;
+    }
+    .leg-table tr + tr td{
+      border-top-style:inset;
+    }
+    .label-icon{
+      display:inline-block;
+      min-width:1.5em;
+      margin-right:6px;
+    }
+
+
+    .resource-links{
+      padding:28px;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:18px;
+      align-items:stretch;
+    }
+    .resource-link{
+      display:block;
+      text-decoration:none;
+      color:var(--ink);
+      background:#fcfbfe;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:18px 20px;
+      box-shadow:var(--shadow);
+    }
+    .resource-link:hover{
+      background:var(--accent-soft);
+    }
+    .resource-link .title{
+      display:block;
+      font-size:20px;
+      font-weight:800;
+      letter-spacing:-.02em;
+      margin-bottom:6px;
+    }
+    .resource-link .desc{
+      display:block;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.45;
+    }
+
     .map-wrap{
       padding:28px;
       display:grid;
@@ -429,7 +493,8 @@
       .hero,
       .map-wrap,
       .section-head,
-      .card{
+      .card,
+      .resource-links{
         grid-template-columns:1fr;
       }
       .hero{min-height:auto}
@@ -500,6 +565,47 @@
           <div class="footer">
             <div>Outbound: Portland, Chicago, Philadelphia, Dublin.</div>
             <div>Ireland route: Dublin, Waterford, Cork, Dingle, Galway, Derry, Dublin, then Philadelphia and Portland return.</div>
+          </div>
+        </section>
+
+
+        <section class="section" id="trip-links">
+          <div class="section-head">
+            <div class="left-rail">
+              <div class="days">Trip Links</div>
+              <div class="nights">Supporting pages</div>
+              <div class="dates">Open in new tabs</div>
+            </div>
+            <div>
+              <h2 class="main-title">Helpful side plans and reference pages</h2>
+              <p class="main-copy">Quick links to the companion pages that live beside this itinerary.</p>
+            </div>
+          </div>
+          <div class="resource-links">
+            <a class="resource-link" href="PHL-connection-plan.html" target="_blank" rel="noopener">
+              <span class="title">PHL Connection Plan</span>
+              <span class="desc">Philadelphia layover logistics, timing, and airport-to-city plan.</span>
+            </a>
+            <a class="resource-link" href="cell-service.html" target="_blank" rel="noopener">
+              <span class="title">Cell Service</span>
+              <span class="desc">Connectivity strategy, airplane mode plan, and offline prep.</span>
+            </a>
+            <a class="resource-link" href="ireland-coffee.html" target="_blank" rel="noopener">
+              <span class="title">Coffee</span>
+              <span class="desc">Coffee stops matched to your hotel sequence across the trip.</span>
+            </a>
+            <a class="resource-link" href="Ireland-restaurants.html" target="_blank" rel="noopener">
+              <span class="title">Restaurant</span>
+              <span class="desc">Restaurant picks matched to each major stop on the route.</span>
+            </a>
+            <a class="resource-link" href="ireland-special-stops.html" target="_blank" rel="noopener">
+              <span class="title">Special Stops</span>
+              <span class="desc">Hidden gems, music pubs, scenic route calls, and worth-it diversions.</span>
+            </a>
+          </div>
+          <div class="footer">
+            <div>Open any side page in a new tab.</div>
+            <div><a class="anchor-btn" href="#route-map">Continue to route map</a></div>
           </div>
         </section>
 
