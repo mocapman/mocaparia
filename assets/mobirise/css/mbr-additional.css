@@ -12948,29 +12948,6 @@ a {
     text-align: center;
   }
 }
-.cid-vgZhNT0FtJ {
-  padding-top: 5rem;
-  padding-bottom: 0rem;
-  background-image: url("../../../assets/images/pao-2000x1125.jpg");
-}
-.cid-vgZhNT0FtJ .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vgZhNT0FtJ .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vgZhNT0FtJ .row {
-  flex-direction: row-reverse;
-}
-.cid-vgZhNT0FtJ .mbr-description {
-  text-align: justify;
-}
 .cid-vgDKgvU0LQ {
   z-index: 1000;
   width: 100%;
@@ -13541,6 +13518,29 @@ a {
   .cid-vgDKgvU0LQ .navbar-collapse {
     padding: 1rem;
   }
+}
+.cid-vgZhNT0FtJ {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/pao-2000x1125.jpg");
+}
+.cid-vgZhNT0FtJ .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vgZhNT0FtJ .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vgZhNT0FtJ .row {
+  flex-direction: row-reverse;
+}
+.cid-vgZhNT0FtJ .mbr-description {
+  text-align: justify;
 }
 .cid-vgDKgwexwf {
   padding-top: 1rem;
