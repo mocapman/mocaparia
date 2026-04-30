@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Dave & Lilli · Ireland Trip Logistics · Quick Reference</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #eef3f0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: #1c2f3a;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 0 0 32px 32px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+    .hero {
+      background: linear-gradient(105deg, #ffffff 0%, #f4faf7 100%);
+      padding: 1.8rem 2rem 2rem;
+      border-bottom: 1px solid #e2eaf0;
+    }
+    h1 {
+      font-size: 2.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      background: linear-gradient(135deg, #1f5e4b, #2f7a62);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.3rem;
+    }
+    .meta {
+      color: #4c7a68;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem 0.8rem;
+      margin-top: 1rem;
+    }
+    .nav a, .link {
+      color: #1f8a6e;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dotted #9bc2b2;
+    }
+    .section {
+      padding: 2rem;
+      border-bottom: 1px solid #e2eaf0;
+      scroll-margin-top: 24px;
+    }
+    .section:last-child { border-bottom: none; }
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      border-left: 5px solid #2c8c6e;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      color: #1b4e3f;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fefefb;
+      border: 1px solid #dde6e0;
+      border-radius: 24px;
+      padding: 1.2rem 1.25rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .card h3 {
+      font-size: 1.08rem;
+      color: #206655;
+      margin-bottom: 0.8rem;
+    }
+    .mini {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 0.72rem;
+      align-items: flex-start;
+    }
+    .icon {
+      min-width: 28px;
+      text-align: center;
+      font-size: 1.15rem;
+      line-height: 1.1;
+    }
+    .mini strong {
+      display: block;
+      color: #1f6a58;
+      margin-bottom: 0.1rem;
+    }
+    .mini span, p, li, td, th {
+      color: #2c4f5a;
+      font-size: 0.94rem;
+    }
+    .note, .warning {
+      border-radius: 18px;
+      padding: 0.95rem 1rem;
+      margin-top: 1rem;
+    }
+    .note {
+      background: #eff7f2;
+      border-left: 4px solid #2c8c6e;
+    }
+    .warning {
+      background: #fff7e8;
+      border-left: 4px solid #d39a27;
+    }
+    .badge {
+      display: inline-block;
+      background: #e2f0ea;
+      border-radius: 999px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #1b6e58;
+      margin-bottom: 0.75rem;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.88rem;
+    }
+    .data-table th, .data-table td {
+      border: 1px solid #d1e0d9;
+      padding: 10px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .data-table th {
+      background: #e6f0ea;
+      color: #1c5e4b;
+      font-weight: 700;
+    }
+    .route {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .route span {
+      background: #f1f7f4;
+      border: 1px solid #d8e7df;
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.86rem;
+      color: #245b4a;
+      font-weight: 600;
+    }
+    ul.clean {
+      margin-left: 1rem;
+    }
+    ul.clean li {
+      margin: 0.28rem 0;
+    }
+    .img-wrap {
+      margin-top: 1rem;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #dbe6e0;
+      background: #f7fbf9;
+    }
+    .img-wrap img {
+      display: block;
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+    }
+    footer {
+      background: #eff5f1;
+      text-align: center;
+      padding: 1.1rem;
+      font-size: 0.82rem;
+      color: #4a6d5e;
+    }
+    @media (max-width: 780px) {
+      .hero, .section { padding: 1.2rem; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="hero" id="top">
+    <h1>☘️ Ireland Trip Logistics</h1>
+    <div class="meta">Quick reference for laundry, parking, tolls, fuel, and paid stops</div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Snapshot</h3>
+        <div class="mini"><div class="icon">🚗</div><div><strong>Rental</strong><span>$689 (€592)</span></div></div>
+        <div class="mini"><div class="icon">🧺</div><div><strong>Laundry</strong><span>2 washes: Cork, Dublin</span></div></div>
+        <div class="mini"><div class="icon">🅿️</div><div><strong>Main friction</strong><span>Dublin, Cork, Derry</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Budget cushions</h3>
+        <div class="mini"><div class="icon">⛽</div><div><strong>Fuel</strong><span>$165-224 (€140-190)</span></div></div>
+        <div class="mini"><div class="icon">🛣️</div><div><strong>Tolls</strong><span>$24-41 (€20-35) plus any Europcar M50 admin fee</span></div></div>
+        <div class="mini"><div class="icon">🎟️</div><div><strong>Visitor costs</strong><span>Only book the must-dos early</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Rate used</h3>
+        <div class="mini"><div class="icon">💱</div><div><strong>Planning only</strong><span>All prices shown as $### (€###)</span></div></div>
+        <div class="mini"><div class="icon">€</div><div><strong>EUR</strong><span>€1 ≈ $1.18</span></div></div>
+        <div class="mini"><div class="icon">£</div><div><strong>GBP</strong><span>£1 ≈ $1.36</span></div></div>
+      </div>
+    </div>
+
+    <div class="route">
+      <span>Dublin</span>
+      <span>Waterford</span>
+      <span>Cork</span>
+      <span>Dingle</span>
+      <span>Galway</span>
+      <span>Derry</span>
+      <span>Dublin</span>
+    </div>
+
+    <div class="nav">
+      <a href="#laundry">Laundry</a>
+      <a href="#parking">Parking</a>
+      <a href="#tolls">Tolls</a>
+      <a href="#fuel">Fuel</a>
+      <a href="#visitor-costs">Visitor costs</a>
+      <a href="#checklist">Checklist</a>
+    </div>
+  </div>
+
+  <div class="section" id="laundry">
+    <div class="title">🧺 Laundry</div>
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Wash 1</span>
+        <h3>Cork · May 8-9</h3>
+        <div class="mini"><div class="icon">✅</div><div><strong>Best use</strong><span>First full reset after travel + Dublin + Waterford</span></div></div>
+        <div class="mini"><div class="icon">📍</div><div><strong>Why here</strong><span>3-night stop, good timing, less pressure</span></div></div>
+        <div class="mini"><div class="icon">💸</div><div><strong>Cost</strong><span>TBD - confirm hotel vs local service</span></div></div>
+      </div>
+      <div class="card">
+        <span class="badge">Wash 2</span>
+        <h3>Dublin · May 18-19</h3>
+        <div class="mini"><div class="icon">✅</div><div><strong>Best use</strong><span>Final reset before return flights + Philly</span></div></div>
+        <div class="mini"><div class="icon">📍</div><div><strong>Why here</strong><span>3-night stop, best end-of-trip buffer</span></div></div>
+        <div class="mini"><div class="icon">💸</div><div><strong>Cost</strong><span>TBD - confirm Pembroke setup</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Pack logic</h3>
+        <div class="mini"><div class="icon">👕</div><div><strong>Clothes</strong><span>6-7 days</span></div></div>
+        <div class="mini"><div class="icon">🧦</div><div><strong>Buffer</strong><span>8-9 days of socks and underwear</span></div></div>
+        <div class="mini"><div class="icon">🧼</div><div><strong>Backup</strong><span>Small sink-wash kit only</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="parking">
+    <div class="title">🅿️ Parking</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stop</th>
+          <th>Plan</th>
+          <th>Ballpark</th>
+          <th>Read on arrival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dublin · Travelodge PLUS</td>
+          <td>Q-Park, not on-site</td>
+          <td>TBD</td>
+          <td>High friction</td>
+        </tr>
+        <tr>
+          <td>Waterford · Fitzwilton</td>
+          <td>Limited on-site, first come</td>
+          <td>$0 (€0) if lucky</td>
+          <td>Low-medium</td>
+        </tr>
+        <tr>
+          <td>Cork · Metropole</td>
+          <td>St. Patrick’s Quay Car Park</td>
+          <td>$14 (€12) per 24h</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>Dingle · Dingle Harbour Nights</td>
+          <td>Private parking</td>
+          <td>$0 (€0)</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Galway · Nox</td>
+          <td>Complimentary on-site</td>
+          <td>$0 (€0)</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Derry · Holiday Inn Express</td>
+          <td>Quayside Multi-Storey</td>
+          <td>$11 (£8)</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>Dublin · Pembroke</td>
+          <td>Need confirmation</td>
+          <td>TBD</td>
+          <td>TBD</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note"><strong>Arrival rule:</strong> for off-site city parking, add 15-25 minutes for entry, ticket, walk, and unloading.</div>
+  </div>
+
+  <div class="section" id="tolls">
+    <div class="title">🛣️ Tolls</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Main trap</h3>
+        <div class="mini"><div class="icon">⚠️</div><div><strong>M50</strong><span>Barrier-free Dublin toll</span></div></div>
+        <div class="mini"><div class="icon">💵</div><div><strong>Rate</strong><span>$4 (€3.20) video rate or about $4 (€3.80) unregistered</span></div></div>
+        <div class="mini"><div class="icon">🚗</div><div><strong>Rental issue</strong><span>Europcar adds M50 tolls automatically with admin fee</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Other likely tolls</h3>
+        <div class="mini"><div class="icon">💳</div><div><strong>N25 Waterford</strong><span>$3 (€2.30)</span></div></div>
+        <div class="mini"><div class="icon">💳</div><div><strong>M3 north</strong><span>$2 (€1.80)</span></div></div>
+        <div class="mini"><div class="icon">🧠</div><div><strong>Rule</strong><span>Most non-M50 tolls are driver-pay</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Cushion</h3>
+        <div class="mini"><div class="icon">💰</div><div><strong>Total</strong><span>$24-41 (€20-35)</span></div></div>
+        <div class="mini"><div class="icon">➕</div><div><strong>Add</strong><span>Any Europcar M50 admin fee</span></div></div>
+        <div class="mini"><div class="icon">❓</div><div><strong>Ask at pickup</strong><span>Exact M50 fee, direct-pay roads, fuel return rule</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="fuel">
+    <div class="title">⛽ Fuel</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Reference</h3>
+        <div class="mini"><div class="icon">📈</div><div><strong>Petrol benchmark</strong><span>$2.25 (€1.91) per liter</span></div></div>
+        <div class="mini"><div class="icon">🧠</div><div><strong>Meaning</strong><span>Motorway fuel can run higher</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Total budget</h3>
+        <div class="mini"><div class="icon">🚘</div><div><strong>Compact car</strong><span>$165-224 (€140-190)</span></div></div>
+        <div class="mini"><div class="icon">📍</div><div><strong>Better habit</strong><span>Refill in larger towns, not motorway stops</span></div></div>
+      </div>
+      <div class="card">
+        <h3>When to top off</h3>
+        <ul class="clean">
+          <li>Before Dingle loops</li>
+          <li>Before longer rural drives</li>
+          <li>Near Dublin before drop-off</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="visitor-costs">
+    <div class="title">🎟️ Visitor costs</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stop</th>
+          <th>Ballpark</th>
+          <th>Parking / note</th>
+          <th>Call</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cliffs of Moher</td>
+          <td>$18 (€15)</td>
+          <td>Parking bundled</td>
+          <td>Prebook if timing matters</td>
+        </tr>
+        <tr>
+          <td>Blarney Castle</td>
+          <td>$28 (€24)</td>
+          <td>On-site parking</td>
+          <td>Good advance decision</td>
+        </tr>
+        <tr>
+          <td>Brú na Bóinne / Newgrange</td>
+          <td>TBD</td>
+          <td>Visitor centre + shuttle</td>
+          <td><strong>Prebook early</strong></td>
+        </tr>
+        <tr>
+          <td>Giant’s Causeway</td>
+          <td>$16 (£12) parking example</td>
+          <td>Check current setup before the day</td>
+          <td>Do not wing it</td>
+        </tr>
+        <tr>
+          <td>Book of Kells</td>
+          <td>$22 (€19)</td>
+          <td>Timed entry</td>
+          <td>Prebook if must-do</td>
+        </tr>
+        <tr>
+          <td>St. Patrick’s Cathedral</td>
+          <td>$14 (€11.50)</td>
+          <td>Simple paid entry</td>
+          <td>Can decide later</td>
+        </tr>
+        <tr>
+          <td>Jameson Bow St.</td>
+          <td>$31 (€26)</td>
+          <td>Timed tour</td>
+          <td>Prebook if important</td>
+        </tr>
+        <tr>
+          <td>Guinness Storehouse</td>
+          <td>TBD</td>
+          <td>Timed entry</td>
+          <td>Book ahead if staying on list</td>
+        </tr>
+        <tr>
+          <td>OPW Heritage Card</td>
+          <td>$47 (€40) each</td>
+          <td>Only worth it if used hard</td>
+          <td>Not automatic</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section" id="checklist">
+    <div class="title">✅ Checklist</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Hotels</h3>
+        <ul class="clean">
+          <li>Confirm reservation</li>
+          <li>Confirm parking process and cost</li>
+          <li>Confirm laundry or nearby service</li>
+          <li>Ask what happens if parking is full</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Europcar</h3>
+        <ul class="clean">
+          <li>Exact M50 admin fee</li>
+          <li>Driver-pay toll roads</li>
+          <li>Fuel return rule</li>
+          <li>Anything special for Northern Ireland</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Book soon</h3>
+        <ul class="clean">
+          <li>Brú na Bóinne</li>
+          <li>Book of Kells if must-do</li>
+          <li>Jameson / Guinness if fixed timing matters</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><strong>Bottom line:</strong> this is now a short list of confirmations, not a research problem.</div>
+    <div style="margin-top:1rem;"><a href="#top" class="link">Back to top</a></div>
+  </div>
+
+  <footer>Dave & Lilli · Ireland Trip Logistics · quick reference version</footer>
+</div>
+</body>
+</html>
